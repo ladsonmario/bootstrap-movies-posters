@@ -11,11 +11,9 @@
 
         for(let i in list) {
             html += 
-            `<div class="col-md-4">
-                <figure class="figure bg-light border">
-                    <img src="${list[i].avatar}" class="figure-img img-fluid p-2" alt="...">
-                    <figcaption class="figure-caption text-center">${list[i].titulo}</figcaption>
-                </figure>
+            `<div class="col-md-4 bg-light border d-flex flex-column align-itens-center mb-3">                
+                <img src="${list[i].avatar}" class="img-fluid p-2" alt="...">
+                <span class="text-center">${list[i].titulo}</span>                
             </div>`;
         }
 
